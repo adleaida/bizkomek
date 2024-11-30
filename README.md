@@ -1,138 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Support Survey</title>
-    <style>
-        .response-section { display: none; }
-    </style>
-</head>
-<body>
-    <h1>Business Support Survey</h1>
-    <form id="surveyForm">
-        <p>Which services do you want to use? (You can select multiple):</p>
-        <input type="checkbox" name="services" value="Marketing your business online" id="marketing"> Marketing your business online<br>
-        <input type="checkbox" name="services" value="Notifications and provision of information about government support programs" id="notifications"> Notifications and provision of information about government support programs<br>
-        <input type="checkbox" name="services" value="Training introduction of a business blog" id="blogTraining"> Training introduction of a business blog<br>
-        <input type="checkbox" name="services" value="Online space for communication with other similar businesses in the country" id="onlineSpace"> Online space for communication with other similar businesses in the country<br><br>
-        <button type="submit">Submit</button>
-    </form>
+# Business Support Survey
 
-    <div id="responses">
-        <!-- Marketing Response -->
-        <div id="marketingResponse" class="response-section">
-            <h2>Marketing Your Business Online</h2>
-            <p>To begin marketing your business online, follow these structured steps:</p>
-            <ol>
-                <li>Define Your Goals: Identify what you want to achieve.</li>
-                <li>Understand Your Target Audience: Research and define your ideal customers.</li>
-                <li>Create a Professional Website: Ensure it is user-friendly and mobile-responsive.</li>
-                <li>Utilize Social Media: Choose platforms where your audience is most active.</li>
-                <li>Leverage Content Marketing: Develop valuable content.</li>
-                <li>Implement SEO: Optimize your website for search engines.</li>
-                <li>Consider Paid Advertising: Use Google Ads or social media ads.</li>
-                <li>Email Marketing: Build and engage your email list.</li>
-                <li>Analyze and Adjust: Use analytics to track and refine your efforts.</li>
-                <li>Stay Updated: Learn new tools and best practices.</li>
-            </ol>
-            <p><b>For detailed guidance, consider purchasing our online course where mentors provide personalized lessons!</b></p>
-        </div>
+Welcome to our Business Support Survey! Please take a moment to read through the services we offer.
 
-        <!-- Notifications Response -->
-        <div id="notificationsResponse" class="response-section">
-            <h2>Notifications and Government Support Programs</h2>
-            <p>Consider the following options:</p>
-            <ul>
-                <li>Download the eGov mobile app for state services.</li>
-                <li>Subscribe to our monthly notification service:</li>
-                <ul>
-                    <li>Grants for starting a business</li>
-                    <li>Subsidies</li>
-                    <li>Discounts on leasing</li>
-                    <li>Loans at reduced rates</li>
-                    <li>Rental benefits</li>
-                    <li>Basic training provided by the government</li>
-                </ul>
-            </ul>
-        </div>
+## Services We Offer:
 
-        <!-- Blog Training Response -->
-        <div id="blogTrainingResponse" class="response-section">
-            <h2>Training: Introduction to Business Blogging</h2>
-            <p>Follow these platform-specific steps:</p>
-            <ul>
-                <li><b>Instagram:</b> Instructions for creating a professional profile.</li>
-                <li><b>Facebook:</b> Tips on setting up and optimizing a business page.</li>
-            </ul>
-            <p><b>For advanced training and advertising techniques, purchase our online course with expert mentors!</b></p>
-        </div>
+You can express interest in the following services:
 
-        <!-- Online Space Response -->
-        <div id="onlineSpaceResponse" class="response-section">
-            <h2>Online Space for Communication with Similar Businesses</h2>
-            <p>Register to join our network:</p>
-            <form id="registrationForm">
-                <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username" required><br><br>
+- *Marketing Your Business Online*
+- *Notifications and Provision of Information about Government Support Programs*
+- *Training for the Introduction of a Business Blog*
+- *Online Space for Communication with Other Similar Businesses*
 
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" required><br><br>
+## Detailed Information
 
-                <label for="brand">Your Brand Name:</label><br>
-                <input type="text" id="brand" name="brand" required><br><br>
+### Marketing Your Business Online
+Here are the steps to begin marketing your business online:
 
-                <label for="businessType">Business Type:</label><br>
-                <select id="businessType" name="businessType" required>
-                    <option value="Manufacturing">Manufacturing Business</option>
-                    <option value="Commercial">Commercial, Financial Business</option>
-                    <option value="Service">Service Business</option>
-                </select><br><br>
+1. *Define Your Goals*: Identify what you want to achieve.
+2. *Understand Your Target Audience*: Research and define your ideal customers.
+3. *Create a Professional Website*: Ensure it is user-friendly and mobile-responsive.
+4. *Utilize Social Media*: Choose platforms where your audience is most active.
+5. *Leverage Content Marketing*: Develop valuable content.
+6. *Implement SEO*: Optimize your website for search engines.
+7. *Consider Paid Advertising*: Use Google Ads or social media ads.
+8. *Email Marketing*: Build and engage your email list.
+9. *Analyze and Adjust*: Use analytics to track and refine your efforts.
+10. *Stay Updated*: Learn new tools and best practices.
 
-                <label for="region">Your Region:</label><br>
-                <select id="region" name="region" required>
-                    <option value="Akmola">Akmola</option>
-                    <option value="Aktobe">Aktobe</option>
-                    <option value="Almaty">Almaty</option>
-                    <option value="Atyrau">Atyrau</option>
-                    <option value="East Kazakhstan">East Kazakhstan</option>
-                    <option value="Karaganda">Karaganda</option>
-                    <option value="Kostanay">Kostanay</option>
-                    <option value="Kyzylorda">Kyzylorda</option>
-                    <option value="Mangystau">Mangystau</option>
-                    <option value="Pavlodar">Pavlodar</option>
-                    <option value="North Kazakhstan">North Kazakhstan</option>
-                    <option value="Turkistan">Turkistan</option>
-                    <option value="West Kazakhstan">West Kazakhstan</option>
-                    <option value="Zhambyl">Zhambyl</option>
-                </select><br><br>
+For detailed guidance, you can *[purchase our online course](#)* where mentors provide personalized lessons!
 
-                <button type="submit">Register</button>
-            </form>
-        </div>
-    </div>
+---
 
-    <script>
-        document.getElementById('surveyForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            // Hide all response sections initially
-            document.querySelectorAll('.response-section').forEach(section => section.style.display = 'none');
+### Notifications and Government Support Programs
+You can consider the following options to stay informed about government support:
 
-            // Display relevant sections based on selected options
-            if (document.getElementById('marketing').checked) {
-                document.getElementById('marketingResponse').style.display = 'block';
-            }
-            if (document.getElementById('notifications').checked) {
-                document.getElementById('notificationsResponse').style.display = 'block';
-            }
-            if (document.getElementById('blogTraining').checked) {
-                document.getElementById('blogTrainingResponse').style.display = 'block';
-            }
-            if (document.getElementById('onlineSpace').checked) {
-                document.getElementById('onlineSpaceResponse').style.display = 'block';
-            }
-        });
-    </script>
-</body>
-</html>
+- Download the *eGov* mobile app for state services.
+- Subscribe to our monthly notification service for updates on:
+  - Grants for starting a business
+  - Subsidies
+  - Discounts on leasing
+  - Loans at reduced rates
+  - Rental benefits
+  - Basic training provided by the government
+
+---
+
+### Training: Introduction to Business Blogging
+We offer platform-specific training:
+
+- *Instagram*: Instructions for creating a professional profile.
+- *Facebook*: Tips on setting up and optimizing a business page.
+
+For advanced training and advertising techniques, purchase our *[online course](#)* with expert mentors!
+
+---
+
+### Online Space for Communication with Similar Businesses
+To join our network of businesses, please register:
+
+- *Username*: Choose a unique username for your account.
+- *Password*: Set a strong password for your account.
+- *Your Brand Name*: Enter your business or brand name.
+- *Business Type*: Choose from the following options:
+  - Manufacturing Business
+  - Commercial, Financial Business
+  - Service Business
+- *Your Region*: Select your region from the list below:
+  - Akmola
+  - Aktobe
+  - Almaty
+  - Atyrau
+  - East Kazakhstan
+  - Karaganda
+  - Kostanay
+  - Kyzylorda
+  - Mangystau
+  - Pavlodar
+  - North Kazakhstan
+  - Turkistan
+  - West Kazakhstan
+  - Zhambyl
+
+Once registered, you'll have access to a network of businesses for collaboration and growth.
+
+---
+
+Thank you for taking the time to explore our services!
